@@ -8,16 +8,16 @@ There seems to be no trivial way to initialize, send text, and receive text from
 * Clone or download a zip of the project
 * launch "llamacpp wrapper.vcxproj" using Visual Studio 2022
 * Ensure the project is in release mode, not debug mode
-* Download the <a href="https://www.lunarg.com/vulkan-sdk/">Vulkan SDK</a>
+* Download the <a href="https://www.lunarg.com/vulkan-sdk/">Vulkan SDK</a>. It might work without the SDK if n_gpu_layers is set to 0, untested
 * Change 'the_language_model.params.model' in "main.cpp" to the path of your language model. A language model is not included with this project
 * Optionally comment the fixed 'params.seed' assignment in "api_wrapper.cpp" to get a different response each time the program runs
 * Run the Local Windows Debugger
 
 ## Example
 
-Code initialization looks like this:
+Code initialization (main.cpp) looks like this:
 
-```
+```C++
 #include "api_wrapper.h"
 
 void main() {
@@ -42,11 +42,10 @@ void main() {
   printf("output text: %s\n", output_text.c_str());
 ```
 
-
-Using the Mistral 7B Q8_0 GGUF model with a fixed params.seed of 12345678 yields the following result:
+Using the Mistral 7B Q8_0 GGUF model with a fixed params.seed of 12345678 yields the following result. It should be noted that different model and seed combinations may result in the model failing to output the reverse-prompt token and getting stuck:
 
 <p align="left" width="100%">
-<img src="/output/clouds.png?raw=true" width="100%" height="100%">
+<img src="/output/llm terminal output.jpg?raw=true" width="75%" height="75%">
 </p>
 
 
