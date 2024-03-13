@@ -1,5 +1,5 @@
 # llamacpp-mini-wrapper
-A small, standalone version of llamapcpp with an API wrapper and Vulkan GPU acceleration.
+A small, standalone version of <a href="https://github.com/ggerganov/llama.cpp">llamapcpp</a> with an API wrapper and Vulkan GPU acceleration.
 
 ## Why
 There seems to be no trivial way to initialize, send text, and receive text from language models directly in C++ code. This project aims to make the process extremely simple by adding a few functions that take care of everything under the hood. Vulkan was chosen as the accelerator due to its crossplatform GPU and OS support.
