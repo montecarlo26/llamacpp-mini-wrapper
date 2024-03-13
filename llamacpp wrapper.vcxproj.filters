@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="llamacpp">
+      <UniqueIdentifier>{41bebad7-4919-4a81-8cb6-c2c74d12424a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="llamacpp\common">
+      <UniqueIdentifier>{299bb3e3-d263-47d1-9f71-fd1a0a37daab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="llamacpp\common\build-info.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\common\common.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\common\console.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\common\grammar-parser.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\common\sampling.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\common\train.cpp">
+      <Filter>llamacpp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\ggml.c">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\ggml-alloc.c">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\ggml-backend.c">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\ggml-quants.c">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\ggml-vulkan.cpp">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="llamacpp\llama.cpp">
+      <Filter>llamacpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\api_wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="llamacpp\common\base64.hpp">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\common.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\console.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\grammar-parser.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\log.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\sampling.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\stb_image.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\common\train.h">
+      <Filter>llamacpp\common</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-alloc.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-backend.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-backend-impl.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-impl.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-quants.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-vulkan.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\ggml-vulkan-shaders.hpp">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\llama.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="llamacpp\unicode.h">
+      <Filter>llamacpp</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\api_wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="llamacpp\common\build-info.cpp.in">
+      <Filter>llamacpp\common</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="llamacpp\common\CMakeLists.txt">
+      <Filter>llamacpp\common</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
