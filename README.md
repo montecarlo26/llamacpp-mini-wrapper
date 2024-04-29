@@ -9,9 +9,12 @@ There seems to be no trivial way to initialize, send text, and receive text from
 * launch "llamacpp wrapper.vcxproj" using Visual Studio 2022
 * Ensure the project is in release mode, not debug mode
 * Download the <a href="https://www.lunarg.com/vulkan-sdk/">Vulkan SDK</a>. It might work without the SDK if n_gpu_layers is set to 0, untested
+	* **Update:** You will need to adjust the include and library / linker directory names based on your version of the SDK
 * Change 'the_language_model.params.model' in "main.cpp" to the path of your language model. A language model is not included with this project
 * Optionally comment the fixed 'params.seed' assignment in "api_wrapper.cpp" to get a different response each time the program runs
 * Run the Local Windows Debugger
+
+**Note:** This project was a proof of concept, do not expect the dependencies to be updated.
 
 ## Example
 
